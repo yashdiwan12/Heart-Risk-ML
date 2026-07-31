@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 import joblib
 import pandas as pd
 import os
@@ -16,10 +16,7 @@ else:
 
 @app.route('/', methods=['GET'])
 def home():
-    return jsonify({
-        "status": "online",
-        "message": "Heart Disease Prediction API is running. Use POST /predict to get predictions."
-    })
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
