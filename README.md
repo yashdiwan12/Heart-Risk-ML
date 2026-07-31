@@ -2,7 +2,7 @@
 
 ## Objective
 
-The objective of this project is to predict the presence of heart disease in patients based on various clinical parameters using a **Random Forest** classification algorithm, and to deploy the trained model as a REST API using Flask.
+The objective of this project is to predict the presence of heart disease in patients based on various clinical parameters using a **Random Forest** classification algorithm, and to deploy the trained model as a REST API using Flask. The API is accompanied by a custom web interface styled with a vintage anatomy textbook theme.
 
 ---
 
@@ -38,10 +38,11 @@ The objective of this project is to predict the presence of heart disease in pat
    - Evaluated the model using the Accuracy Score metric.
    - Serialized and saved the trained model as `model.pkl`.
 
-3. **Task 3: Flask API Setup**
+3. **Task 3: Flask API & Frontend Setup**
    - Developed a REST API using the Flask framework in `app.py`.
    - Configured an endpoint (`/predict`) to accept patient clinical parameters as JSON input.
-   - Ensured the API returns the prediction in JSON format (e.g., `{"prediction": "Heart Disease Detected"}`).
+   - Built a fully responsive frontend UI (`templates/index.html`) using a vintage anatomy textbook theme (featuring arterial red and venous blue accents).
+   - Ensured the API returns the prediction in JSON format and displays it dynamically on the frontend.
 
 4. **Task 4: GitHub & Render Deployment**
    - Structured the repository with the necessary source code, trained model, and configuration files.
@@ -63,11 +64,3 @@ The objective of this project is to predict the presence of heart disease in pat
 ## Conclusion
 
 In this project, the **Random Forest** classifier achieved an exceptional accuracy of 98.54% on the test set, demonstrating its strong capability to capture complex, non-linear relationships within clinical parameters for heart disease prediction. Deploying the model using Flask and Render proved to be a valuable experience, although ensuring the correct environment configuration via `requirements.txt` and handling proper JSON payload structures presented minor challenges. These hurdles highlight the critical importance of **MLOps**. Developing a machine learning model is only half the battle; MLOps practices are essential for transitioning models from isolated environments into scalable, reliable, and accessible production APIs. Proper deployment strategies ensure that predictive models can consistently process real-world data and deliver actionable insights efficiently.
-
----
-
-## Author
-
-- **Name**: Yash Diwan
-- **Email**: diwanyash12@gmail.com
-- **LinkedIn**: [Yash Diwan](https://linkedin.com/in/diwanyash)
